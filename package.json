@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "ora": "^9.3.0",
+    "prompt-sync": "^4.2.0",
+    "puppeteer": "^24.39.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}
