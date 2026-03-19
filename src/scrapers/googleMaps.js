@@ -62,7 +62,6 @@ export async function scrapeGoogleMaps(options) {
 
           observer.observe(container, { childList: true, subtree: true });
 
-          // fallback timeout (important, or it might hang forever)
           setTimeout(() => {
             observer.disconnect();
             resolve(prevCount);

@@ -28,10 +28,9 @@ if (!results) {
 
 const now = new Date();
 const timestamp = now.toISOString().replace(/[:.]/g, "-").slice(0, 19);
-// Correct way to go one directory up
+
 const filePath = path.join("outputs", `${source}-${timestamp}.csv`);
 
-// Sanitize only the filename part (not the whole path)
 const dir = path.dirname(filePath);
 const filename = path.basename(filePath);
 const sanitizedFilename = filename
@@ -43,7 +42,6 @@ const sanitizedFilePath = path.join(dir, sanitizedFilename);
 
 jsonToCsv(results, sanitizedFilePath);
 
-// Convert to file URL
 const absolutePath = path.resolve(sanitizedFilePath);
 const fileUrl = `file://${absolutePath.replace(/\\/g, "/")}`;
 
