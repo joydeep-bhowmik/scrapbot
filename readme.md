@@ -1,4 +1,4 @@
-This project is a work in progress
+just a project i created while learing data scrapping
 
 ```bash
 npm main.js
